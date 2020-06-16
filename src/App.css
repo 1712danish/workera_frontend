@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+a{
+  color: black !important;
+}
+
+.brand-logo{
+  font-family: 'Lemon', cursive;
+}
+
+h3{
+  font-family: 'Neucha', cursive;
+}
+
+h5{
+  font-family: 'Lemon', cursive;
+}
+
+.nav-wrapper{
+  margin-left:"50px";
+}
+
+.home {
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
