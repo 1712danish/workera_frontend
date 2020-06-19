@@ -1,21 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import M from "materialize-css";
 
 function Oportunities() {
   const [data, setData] = useState([]);
   const [dateResult, setDate] = useState("");
+  useEffect(()=>{
+    if(!dateResult){
+      fetch("/showevent", {})
+        .then((res) => res.json())
+        .then((result) => {
+          // console.log(typeof(result))
+          setData(result);
+        });
+      }
+  
+  },[])
   
 
-  if(!dateResult){
-  fetch("/showevent", {})
-    .then((res) => res.json())
-    .then((result) => {
-      // console.log(typeof(result))
-      setData(result);
-    });
-
-  }
+  
 
   function showAll(){
     fetch("/showevent", {})
@@ -26,7 +29,10 @@ function Oportunities() {
     });
 
   }
+
+  
   function postData(){
+    
     fetch("/bydate", {
       method:"post",
       headers:{

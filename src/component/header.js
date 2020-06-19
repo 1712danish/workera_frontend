@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import M from "materialize-css";
@@ -9,18 +9,21 @@ const email = localStorage.getItem("email");
 function Header() {
   const history = useHistory();
   const [data, setData] = useState([]);
+  useEffect(()=>{
+    fetch("/showprofile", {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("jwt"),
+      },
+    })
+      .then(res=> res.json())
+      .then((result) => {
+        setData(result);
+      });
+  
 
-  fetch("/showprofile", {
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: "Bearer " + localStorage.getItem("jwt"),
-    },
-  })
-    .then((res) => res.json())
-    .then((result) => {
-      setData(result);
-    });
-
+  },[])
+  
   return (
     <nav>
       <div className="nav-wrapper white">
