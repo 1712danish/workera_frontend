@@ -42,11 +42,13 @@ function Enter() {
   },[url])
 
   function myPost() {
+    
 
     const data = new FormData();
     data.append("file",image);
     data.append("upload_preset","goodera");
     data.append("cloud_name","danish1712");
+
     
 
     fetch("https://api.cloudinary.com/v1_1/danish1712/image/upload",{
@@ -65,7 +67,11 @@ function Enter() {
       ).catch(err=>{
         console.log(err);
       })
-
+      if(!url){
+        
+          M.toast({ html: "Please provide all the details"});
+        
+      }
 
     
   }
@@ -110,7 +116,7 @@ function Enter() {
         />
 
         <div class="file-field input-field">
-          <div class="btn #9fa8da indigo lighten-3">
+          <div class="btn #3949ab indigo darken-1">
             <span>Upload Image</span>
             <input type="file" onChange={(e) => setImage(e.target.files[0])} />
           </div>
@@ -121,7 +127,7 @@ function Enter() {
 
         <button
           onClick={() => myPost()}
-          className="btn waves-effect waves-light #9fa8da indigo lighten-3
+          className="btn #3949ab indigo darken-1
 
         "
           type="submit"
