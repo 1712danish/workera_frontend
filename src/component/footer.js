@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 function Footer(){
     return(
-        <footer className="page-footer #ffffff white">
+        <footer className="page-footer #ffffff white" >
           <div className="container">
             <div className="row">
               <div className="col l6 s12">

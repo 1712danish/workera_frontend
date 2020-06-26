@@ -78,13 +78,11 @@ function Oportunities() {
           >
             Show All
           </button>
-        </div>
-        <div className="col s" style={{ marginLeft: "30px", display: "flex" }}>
           <input
             type="date"
             value={dateResult}
             onChange={(e) => setDate(e.target.value)}
-            style={{ width: "150px" }}
+            style={{ width: "150px",marginLeft:"15px" }}
           />
           <button
             onClick={() => postData()}
@@ -94,19 +92,23 @@ function Oportunities() {
             Search
           </button>
         </div>
+       
         
       </div>
-
+      
       {data.map((item) => {
         return (
           <div
-            className="card"
+            
             style={{
+              backgroundColor:"white",
+              borderRadius:"10px",
+              display:"flex",
               padding: "15px",
               marginTop: "10px",
-              maxWidth: "800px",
+              maxWidth: "900px",
               marginLeft: "30px",
-              display: "flex",
+              
 
               borderBottom: "2px solid gray",
             }}
@@ -114,6 +116,7 @@ function Oportunities() {
             <div>
               <img
                 style={{
+                  marginTop:"45px",
                   height: "200px",
                   width: "200px",
                   borderRadius: "20px",
@@ -164,6 +167,7 @@ function Oportunities() {
           </div>
         );
       })}
+      
     </div>
   );
 }

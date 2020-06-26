@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import M from "materialize-css";
@@ -10,23 +10,63 @@ function Header() {
 
   const history = useHistory();
   const [data, setData] = useState([]);
-  useEffect(()=>{
+  useEffect(() => {
     fetch("/showprofile", {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
     })
-      .then(res=> res.json())
+      .then(res => res.json())
       .then((result) => {
         setData(result);
       });
-  
 
-  },[])
-  
+
+  }, [])
+
   return (
-    <nav>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{zIndex:"9999"}}>
+      <Link to="/" className="navbar-brand">
+        <h2>Workera</h2>
+      </Link>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <div className="collapse navbar-collapse white" id="navbarSupportedContent"  >
+
+
+        <ul className="navbar-nav mr-auto "  >
+          <li>
+            <Link to="/oportunities">oportunities</Link>
+          </li>
+          <li>
+            <Link to="/refer">Refer Event</Link>
+          </li>
+          <li>
+          <Link to="/profile">Profile</Link>
+
+          </li>
+
+
+
+        </ul>
+      </div>
+
+
+
+
+
+
+    </nav>
+  );
+}
+
+export default Header;
+
+
+{/* <nav className="navbar navbar-expand-sm bg-light">
       <div className="nav-wrapper white">
         <Link to="/" className="brand-logo left">
           Workera
@@ -38,6 +78,7 @@ function Header() {
           <li>
             <Link to="/refer">Refer Event</Link>
           </li>
+            
 
           <li>
             <Dropdown className="col s12 m2">
@@ -109,8 +150,8 @@ function Header() {
           </li>
         </ul>
       </div>
-    </nav>
-  );
-}
+    </nav> */}
 
-export default Header;
+
+
+

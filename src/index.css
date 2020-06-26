@@ -17,6 +17,15 @@ body {
     );
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
 .banner{
   background-image: url("./assets/banner_updated.png");
   object-fit:fill;

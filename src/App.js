@@ -8,6 +8,7 @@ import Signin from "./component/Signin";
 import Home from "./component/home"
 import Oportunities from "./component/oportunies";
 import Volunteer from "./component/volunteer"
+import Profile from "./component/profile"
 
 
 import "./App.css";
@@ -35,6 +36,9 @@ function App() {
       </Route>
       <Route exact path="/volunteer">
         <Volunteer />
+      </Route>
+      <Route exact path="/profile">
+        <Profile />
       </Route>
       <Footer />
     </BrowserRouter>
