@@ -62,16 +62,18 @@ function Enter() {
             M.toast({ html: "Please provide all the details"});
       
           }
+          if(!data.url){
+        
+            M.toast({ html: "Please provide all the details"});
+          
+        }
           setUrl(data.url)
+          
         }
       ).catch(err=>{
         console.log(err);
       })
-      if(!url){
-        
-          M.toast({ html: "Please provide all the details"});
-        
-      }
+      
 
     
   }

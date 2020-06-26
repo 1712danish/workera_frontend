@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import {Link,useHistory} from "react-router-dom"
 import M from "materialize-css";
 
+
 const Volunteer = () => {
   const history = useHistory();
   
@@ -28,7 +29,10 @@ const Volunteer = () => {
         //   localStorage.setItem("jwt",data.token);
         //   localStorage.setItem("user",JSON.stringify(data.user));
           M.toast({html:data.message})
+          
           history.push("/")
+          
+
         }
       
     }).catch(err=>{

@@ -7,6 +7,7 @@ const name = localStorage.getItem("name");
 const email = localStorage.getItem("email");
 
 function Header() {
+
   const history = useHistory();
   const [data, setData] = useState([]);
   useEffect(()=>{
@@ -65,7 +66,10 @@ function Header() {
                   <p>
                     <b>Volunteered Events</b>
                   </p>
-                  {data&&data[0]&&data.map((item) => {
+                  {
+                    
+                  data&&data[0]&&data.map((item) => {
+                      
                         
                        return <div>{item.volunteeredTo.name}</div>;
                     })}
