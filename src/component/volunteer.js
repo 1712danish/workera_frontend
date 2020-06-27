@@ -24,11 +24,11 @@ const Volunteer = () => {
       console.log(data);
   
       if(data.error){
-          M.toast({html: data.error})
+          M.toast({html: data.error,classes:"black"})
         }else{
         //   localStorage.setItem("jwt",data.token);
         //   localStorage.setItem("user",JSON.stringify(data.user));
-          M.toast({html:data.message})
+          M.toast({html:data.message,classes:"black"})
           
           history.push("/")
           

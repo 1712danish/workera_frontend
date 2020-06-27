@@ -26,7 +26,7 @@ const Signin = () => {
       console.log(data);
   
       if(data.error){
-          M.toast({html: data.error})
+          M.toast({html: data.error,classes:"black"})
         }else{
           const value=data.user;
           console.log(value)
@@ -36,10 +36,13 @@ const Signin = () => {
           localStorage.setItem("name",JSON.stringify(value.name));
           localStorage.setItem("email",JSON.stringify(value.email));
 
-          M.toast({html: "signed in succesfully"})
-          
+                    
           history.push("/")
+          
           window.location.reload(false);
+          M.toast({html: "signed in succesfully",classes:"black"})
+
+
         }
       
     }).catch(err=>{
@@ -68,7 +71,11 @@ const Signin = () => {
           
           onClick={()=>postData()}
           
-          className="btn waves-effect #9fa8da indigo lighten-3"
+          className="btn #3949ab indigo darken-1
+
+        "
+          style={{color:"white",width:"170px",alignSelf:"center"}}
+
           type="submit"
           name="action"
         >

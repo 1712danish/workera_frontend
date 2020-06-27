@@ -29,9 +29,9 @@ function Enter() {
         .then((res) => res.json())
         .then((data) => {
           if (data.error) {
-            M.toast({ html: data.error });
+            M.toast({ html:data.error,classes:"black"});
           } else {
-            M.toast({ html: data.message });
+            M.toast({ html: data.message,classes:"black" });
           }
         })
         .catch((err) => {
@@ -59,12 +59,12 @@ function Enter() {
       res.json()).then(
         data=>{
           if(!data){
-            M.toast({ html: "Please provide all the details"});
+            M.toast({ html: "Please provide all the details",classes:"black"});
       
           }
           if(!data.url){
         
-            M.toast({ html: "Please provide all the details"});
+            M.toast({ html: "Please provide all the details",classes:"black"});
           
         }
           setUrl(data.url)
@@ -119,7 +119,7 @@ function Enter() {
 
         <div class="file-field input-field">
           <div class="btn #3949ab indigo darken-1">
-            <span>Upload Image</span>
+            <span style={{color:"white"}}>Upload Image</span>
             <input type="file" onChange={(e) => setImage(e.target.files[0])} />
           </div>
           <div class="file-path-wrapper">
@@ -132,6 +132,7 @@ function Enter() {
           className="btn #3949ab indigo darken-1
 
         "
+          style={{color:"white",width:"170px",alignSelf:"center"}}
           type="submit"
           name="action"
         >

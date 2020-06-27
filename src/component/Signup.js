@@ -30,9 +30,9 @@ const Signup = () => {
 
      
       if(data.error){
-      M.toast({html: data.error})
+      M.toast({html: data.error,classes:"black"})
       }else{
-        M.toast({html: data.message})
+        M.toast({html: data.message,classes:"black"})
         history.push("/signin")
       }
     }).catch(err=>{
@@ -57,7 +57,11 @@ const Signup = () => {
 
         <input type="password" placeholder="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} />
         <button onClick={()=>postData()}
-          className="btn waves-effect  #9fa8da indigo lighten-3"
+          className="btn #3949ab indigo darken-1
+
+          "
+            style={{color:"white",width:"170px",alignSelf:"center"}}
+  
           type="submit"
           name="action"
         >

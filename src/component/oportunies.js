@@ -48,7 +48,7 @@ function Oportunities() {
           
         setData(result);
         }else{
-          M.toast({html: "No result found"})
+          M.toast({html: "No result found",classes:"black"})
 
         }
       })
@@ -74,7 +74,8 @@ function Oportunities() {
           <button
             onClick={() => showAll()}
             className=" #3949ab indigo darken-1 btn"
-            style={{ marginLeft: "10px" }}
+            
+            style={{ marginLeft: "10px",color:"white"}}
           >
             Show All
           </button>
@@ -87,7 +88,7 @@ function Oportunities() {
           <button
             onClick={() => postData()}
             className=" #3949ab indigo darken-1  btn"
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "10px",color:"white" }}
           >
             Search
           </button>
@@ -106,6 +107,7 @@ function Oportunities() {
               display:"flex",
               padding: "15px",
               marginTop: "10px",
+              marginBottom:"20px",
               maxWidth: "900px",
               marginLeft: "30px",
               
