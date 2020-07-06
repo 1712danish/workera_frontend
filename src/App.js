@@ -8,6 +8,8 @@ import Signin from "./component/Signin";
 import Home from "./component/home"
 import Oportunities from "./component/oportunies";
 import Volunteer from "./component/volunteer"
+import ResetPassword from "./component/Reset"
+import NewPassword from "./component/NewPassword"
 import Profile from "./component/profile"
 
 
@@ -39,6 +41,12 @@ function App() {
       </Route>
       <Route exact path="/profile">
         <Profile />
+      </Route>
+      <Route exact path="/reset">
+        <ResetPassword />
+      </Route>
+      <Route  path="/reset/:token">
+        <NewPassword />
       </Route>
       <Footer />
     </BrowserRouter>

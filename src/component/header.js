@@ -1,30 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
-import Dropdown from "react-bootstrap/Dropdown";
-import M from "materialize-css";
 
-const name = localStorage.getItem("name");
-const email = localStorage.getItem("email");
+
 
 function Header() {
 
-  const history = useHistory();
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetch("/showprofile", {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("jwt"),
-      },
-    })
-      .then(res => res.json())
-      .then((result) => {
-        setData(result);
-      });
-
-
-  }, [])
-
+ 
+  
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{zIndex:"9999"}}>
       <Link to="/" className="navbar-brand">

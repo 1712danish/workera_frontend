@@ -56,7 +56,7 @@ const Signin = () => {
 
   return (
     
-    <div className="mycard">
+    <div className="mycard " style={{height:"500px"}}>
       <div className="card card-auth" style={{
           margin: "50px auto",
           textAlign: "center",
@@ -83,6 +83,7 @@ const Signin = () => {
           
         </button>
         <h6><Link to="/signup">Don't have an account?</Link></h6>
+        <h6><Link to="/reset">Forgot password?</Link></h6>
       </div>
     </div>
   );

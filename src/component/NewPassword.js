@@ -1,21 +1,24 @@
 import React,{useState} from "react";
-import {Link,useHistory} from "react-router-dom"
+import {Link,useHistory,useParams} from "react-router-dom"
 import M from "materialize-css";
 
 
-const Volunteer = () => {
+
+const NewPassword = () => {
   const history = useHistory();
-  
+  const [password,setPassword] = useState("");
+  const {token}=useParams();
+  console.log(token);
 
   const postData =()=>{
-    fetch("/volunteer",{
+    fetch("/new-password",{
       method:"post",
       headers:{
-        "Content-Type":"application/json",
-        Authorization: "Bearer " + localStorage.getItem("jwt"),
+        "Content-Type":"application/json"
       },
       body:JSON.stringify({
-        
+        token,
+        password
       })
     }).then(res=>
       res.json()
@@ -26,12 +29,13 @@ const Volunteer = () => {
       if(data.error){
           M.toast({html: data.error,classes:"black"})
         }else{
-        //   localStorage.setItem("jwt",data.token);
-        //   localStorage.setItem("user",JSON.stringify(data.user));
-          M.toast({html:data.message,classes:"black"})
           
+                    
           history.push("/")
           
+       
+          M.toast({html: data.message,classes:"black"})
+
 
         }
       
@@ -45,6 +49,7 @@ const Volunteer = () => {
 
 
   return (
+    <div >
     <div className="mycard " style={{height:"500px"}}>
       <div className="card card-auth" style={{
           margin: "50px auto",
@@ -52,21 +57,31 @@ const Volunteer = () => {
           maxWidth: "600px",
           padding: "10px",
         }}>
-        <h1 className="brand-logo">Goodera</h1>
-        <h3>Please click the button to Volunteer!!</h3>
+        <h1 className="brand-logo">Workera</h1>
+
+        <input type="password" placeholder="New password" value={password} onChange={(e)=>{setPassword(e.target.value)}} />
         <button
+          
           onClick={()=>postData()}
-          className="btn waves-effect #9fa8da indigo lighten-3"
+          
+          className="btn #3949ab indigo darken-1
+
+        "
+          style={{color:"white",width:"200px",alignSelf:"center"}}
+
           type="submit"
           name="action"
         >
-          Volunteer
+          Update password
           
         </button>
-        
       </div>
+    </div>
+   
     </div>
   );
 };
 
-export default Volunteer;
+export default NewPassword;
+
+

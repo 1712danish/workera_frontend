@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
-import Dropdown from "react-bootstrap/Dropdown";
 import M from "materialize-css";
 
 const userName = localStorage.getItem("name");

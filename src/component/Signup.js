@@ -44,7 +44,7 @@ const Signup = () => {
 
 
   return (
-    <div className="mycard">
+    <div className="mycard " style={{height:"500px"}}>
       <div className="card card-auth" style={{
           margin: "50px auto",
           textAlign: "center",

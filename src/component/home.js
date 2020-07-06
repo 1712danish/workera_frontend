@@ -6,7 +6,7 @@ const name = localStorage.getItem("name");
 
 function Home() {
   return (
-    <div>
+    <div >
       <header
         className=" w3-center banner"
         style={{ padding: "128px 16px",textAlign:"center" }}
