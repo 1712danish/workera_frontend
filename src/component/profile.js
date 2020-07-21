@@ -119,14 +119,14 @@ function Profile() {
 
                 borderBottom: "2px solid gray",
             }}>
-                <h1 style={{ marginTop: "30px" }}><b>Volunteered Events</b></h1>
+                <h1 style={{ marginTop: "30px" }}><b>Registered Events</b></h1>
                 <div className="row" style={{ display: "flex" }}>
                     {
 
                         data && data[0] && data.map((item) => {
 
                             
-                            return (!userName?<h3 style={{alignSelf:"center"}}>Login</h3>:<div className="card col-s" style={{ marginTop: "25px", marginLeft: "25px", padding: "10px", backgroundColor: "grey", width: "100px" }}><h3>{item.volunteeredTo.name}</h3></div>);
+                            return (!userName?<h3 style={{alignSelf:"center"}}>Login</h3>:<div className="card col-s" style={{ marginTop: "15px", marginLeft: "25px", padding: "10px", backgroundColor: "grey", width: "250px" }}><h5>{item&&item.volunteeredTo.name}</h5></div>);
                         })}
 
                 </div>

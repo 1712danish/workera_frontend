@@ -8,10 +8,10 @@ function Footer(){
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h5 className="grey-text">Workera</h5>
-                <p className="grey-text">Volunteer and be the change you wish to see around you.</p>
+                <h5 className="grey-text">Orator</h5>
+                <p className="grey-text">Register and be the change you wish to see around you.</p>
                 <p className="grey-text"><b>Phone:</b> +91 8318540122, +91 7408146010</p>
-                <p className="grey-text"><b>E-mail: </b> workera@gmail.com </p>
+                <p className="grey-text"><b>E-mail: </b> Orator@gmail.com </p>
 
               </div>
               <div className="col l4 offset-l2 s12">

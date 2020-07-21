@@ -37,6 +37,7 @@ main {
 .banner{
   background-image: url("./assets/banner_updated.png");
   object-fit:fill;
+
 }
 
 body {
@@ -54,5 +55,16 @@ code {
     monospace;
 }
 
+.zoom {
+  padding: 50px;
+  
+  transition: transform .2s; /* Animation */
+  
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 

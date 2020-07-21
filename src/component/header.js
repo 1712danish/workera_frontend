@@ -10,7 +10,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{zIndex:"9999"}}>
       <Link to="/" className="navbar-brand">
-        <h2>Workera</h2>
+        <h2>Orator</h2>
       </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -25,6 +25,12 @@ function Header() {
           </li>
           <li>
             <Link to="/refer">Refer Event</Link>
+          </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+          <li>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li>
           <Link to="/profile">Profile</Link>
@@ -51,7 +57,7 @@ export default Header;
 {/* <nav className="navbar navbar-expand-sm bg-light">
       <div className="nav-wrapper white">
         <Link to="/" className="brand-logo left">
-          Workera
+          Orator
         </Link>
         <ul id="nav-mobile" className="right">
           <li>
@@ -87,14 +93,14 @@ export default Header;
                 </Dropdown.Item>
                 <Dropdown.Item  className="overflow-auto">
                   <p>
-                    <b>Volunteered Events</b>
+                    <b>Registered Events</b>
                   </p>
                   {
                     
                   data&&data[0]&&data.map((item) => {
                       
                         
-                       return <div>{item.volunteeredTo.name}</div>;
+                       return <div>{item.RegisteredTo.name}</div>;
                     })}
                 </Dropdown.Item>
                 <Dropdown.Item></Dropdown.Item>

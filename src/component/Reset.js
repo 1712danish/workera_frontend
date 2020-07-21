@@ -58,7 +58,7 @@ const ResetPassword = () => {
           maxWidth: "600px",
           padding: "10px",
         }}>
-        <h1 className="brand-logo">Workera</h1>
+        <h1 className="brand-logo">Orator</h1>
         <input type="text" placeholder="E-mail" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
 
         <button

@@ -65,7 +65,7 @@ function Oportunities() {
           fontSize: "50px",
         }}
       >
-        Explore volunteering opportunities
+        Explore Registering opportunities
       </h3>
 
       <div className="row">
@@ -163,7 +163,7 @@ function Oportunities() {
                 type="submit"
                 name="action"
               >
-                <Link to="/volunteer">Volounteer</Link>
+                <Link to="/Register">Register</Link>
               </button>
             </div>
           </div>

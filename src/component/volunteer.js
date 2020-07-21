@@ -3,7 +3,7 @@ import {Link,useHistory} from "react-router-dom"
 import M from "materialize-css";
 
 
-const Volunteer = () => {
+const Register = () => {
   const history = useHistory();
   
 
@@ -53,14 +53,14 @@ const Volunteer = () => {
           padding: "10px",
         }}>
         <h1 className="brand-logo">Goodera</h1>
-        <h3>Please click the button to Volunteer!!</h3>
+        <h3>Please click the button to Register!!</h3>
         <button
           onClick={()=>postData()}
           className="btn waves-effect #9fa8da indigo lighten-3"
           type="submit"
           name="action"
         >
-          Volunteer
+          Register
           
         </button>
         
@@ -69,4 +69,4 @@ const Volunteer = () => {
   );
 };
 
-export default Volunteer;
+export default Register;

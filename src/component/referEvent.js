@@ -1,5 +1,5 @@
 import React, { useState,useEffect} from "react";
-import { Link } from "react-router-dom";
+import { Link ,useHistory} from "react-router-dom";
 import M from "materialize-css";
 
 function Enter() {
@@ -9,6 +9,7 @@ function Enter() {
   const [date, setDate] = useState("");
   const [image, setImage] = useState("");
   const [url,setUrl] = useState("");
+  const history = useHistory();
 
   useEffect(()=>{
     if(url){
@@ -37,7 +38,10 @@ function Enter() {
         .catch((err) => {
           console.log(err);
         });
+
+        history.push("/oportunities")
     }
+
 
   },[url])
 
