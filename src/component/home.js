@@ -129,7 +129,7 @@ function Home() {
         <img src={require("../assets/danish.jpeg")} alt="Mike" style={{width:"100%",height:"400px"}} />
         <div className="w3-container">
           <h3>Danish Ali</h3>
-          <p className="w3-opacity">Web Designer</p>
+          <p className="w3-opacity">Web Designer, Backened developer</p>
           <p><button className="w3-button w3-light-grey w3-block"><i className="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
