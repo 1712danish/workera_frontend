@@ -55,7 +55,7 @@ function AboutUs() {
                             <img src={require("../assets/ceo.jpg")} style={{ width: "100%", height: "400px" }} />
                             <div className="w3-container">
                                 <h3>Manish Kumar Singh</h3>
-                                <p className="w3-opacity">CEO & Founder</p>
+                                <p className="w3-opacity">CEO</p>
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ function AboutUs() {
                 </div>
 
                 <div className="w3-row-padding w3-grayscale" style={{ marginTop: "64px" }}>
-                    <h2 className="w3">Technical</h2>
+                    <h2 className="w3">Technical Team</h2>
 
 
                     
@@ -144,6 +144,15 @@ function AboutUs() {
                             <div className="w3-container">
                                 <h3>Danish Ali</h3>
                                 <p className="w3-opacity">Web Designer, Backened developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w3-col l3 m6 w3-Left-bottom">
+                        <div className="w3-card" style={{ marginLeft: "auto", justifyContent: "auto" }} >
+                            <img src={require("../assets/saurabh.jpeg")} alt="Mike" style={{ width: "100%", height: "400px" }} />
+                            <div className="w3-container">
+                                <h3>Saurabh Kumar</h3>
+                                <p className="w3-opacity">Database handler</p>
                             </div>
                         </div>
                     </div>
