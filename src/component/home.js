@@ -47,10 +47,11 @@ function Home() {
         <div className="w3-quarter" style={{ color: "white" }}>
           <h2>Our Work</h2>
           <p>
-            Inspiring global impact through Registering and giving programs,
-            Orator provides technology that amplifies students engagement and
-            drives social impact. We empower organisations to track, measure and
-            communicate the impact of their Registering initiatives.
+          Inspiring youth and helping them to develop their social skills via providing 
+          them a real organisation culture which amplifies their personal and core skills 
+          to attain their personal as well as professional goals. We empower students to 
+          track, measure and communicate with an impact which helps them to take initiatives 
+          and equipped them with the desired skills which make them industry relevant.
           </p>
 
           <p>
