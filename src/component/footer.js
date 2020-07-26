@@ -11,7 +11,7 @@ function Footer(){
                 <h5 className="grey-text">Orator</h5>
                 <p className="grey-text">Register and be the change you wish to see around you.</p>
                 <p className="grey-text"><b>Phone:</b> +91 89682 72850</p>
-                <p className="grey-text"><b>E-mail: </b> Oratorlpu.pi@gmail.con </p>
+                <p className="grey-text"><b>E-mail: </b> oratorlpu.pi@gmail.con </p>
 
               </div>
               <div className="col l4 offset-l2 s12">

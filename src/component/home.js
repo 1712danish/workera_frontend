@@ -56,8 +56,8 @@ function Home() {
 
           <p>
           <b>Some of well known events by Orator: </b><br />
-          1.<b> Grant marathon</b> (15th Aug 2019)<br /> . 
-          2. <b>Women marathon</b> (15th Aug 2018)<br /> . 
+          1.<b> Grant marathon</b> (15th Aug 2019)<br />  
+          2. <b>Women marathon</b> (15th Aug 2018)<br />  
           3. <b>Industrial visit in GNA</b><br />
           4. <b>Voice of vertos</b><br />
           5. <b>Art beat </b><br />
