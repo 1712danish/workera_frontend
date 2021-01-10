@@ -21,7 +21,7 @@ function Header() {
 
         <ul className="navbar-nav mr-auto "  >
           <li>
-            <Link to="/oportunities">Oportunities</Link>
+            <Link to="/oportunities">Opportunities</Link>
           </li>
           <li>
             <Link to="/refer">Refer Event</Link>
