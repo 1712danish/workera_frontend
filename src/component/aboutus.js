@@ -10,17 +10,17 @@ function AboutUs() {
                 style={{ maxWidth: "1000px", backgroundColor: "white", marginTop: "50px", borderRadius: "10px" }}
                 id="band"
             >
-                <h2 className="w3-wide">What is Orator?</h2>
+                <h2 className="w3-wide">What is Workera?</h2>
                 <p className="w3-opacity">
                     <i>We love to help.</i>
                 </p>
                 <p className="w3-justify" style={{ fontSize: "25px", textAlign: "center" }}>
-                    <b>"Orator"</b> is an organization functioning under the aegis of student welfare,
+                    <b>"Workera"</b> is an organization functioning under the aegis of student welfare,
                 Lovely Professional University. Organization tries to connect the young leaders.
                  It is devoted to rising leaders among our communities around the globe.
                   Through independently-organized Leadership events and workshops meant to inspire public speaking,
                    prompt innovation and create professional connections.<br />
-                   Some of well known events by Orator: <br />
+                   Some of well known events by Workera: <br />
                     1. Grant marathon (15th Aug 2019) . <br />
                     2. Women marathon (15th Aug 2018) . <br />
                     3. Industrial visit in GNA automobile parts manufacturing.<br />

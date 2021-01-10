@@ -28,7 +28,7 @@ function Home() {
         style={{ maxWidth: "800px" }}
         id="band"
       >
-        <h2 className="w3-wide">Orator in Action</h2>
+        <h2 className="w3-wide">Workera in Action</h2>
         <p className="w3-opacity">
           <i>We love to help.</i>
         </p>
@@ -55,7 +55,7 @@ function Home() {
           </p>
 
           <p>
-          <b>Some of well known events by Orator: </b><br />
+          <b>Some of well known events by Workera: </b><br />
           1.<b> Grant marathon</b> (15th Aug 2019)<br />  
           2. <b>Women marathon</b> (15th Aug 2018)<br />  
           3. <b>Industrial visit in GNA</b><br />

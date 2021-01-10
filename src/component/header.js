@@ -10,7 +10,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{zIndex:"9999"}}>
       <Link to="/" className="navbar-brand">
-        <h2>Orator</h2>
+        <h2>Workera</h2>
       </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@ export default Header;
 {/* <nav className="navbar navbar-expand-sm bg-light">
       <div className="nav-wrapper white">
         <Link to="/" className="brand-logo left">
-          Orator
+          Workera
         </Link>
         <ul id="nav-mobile" className="right">
           <li>
