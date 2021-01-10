@@ -21,14 +21,12 @@ function Header() {
 
         <ul className="navbar-nav mr-auto "  >
           <li>
-            <Link to="/oportunities">oportunities</Link>
+            <Link to="/oportunities">Oportunities</Link>
           </li>
           <li>
             <Link to="/refer">Refer Event</Link>
           </li>
-          <li>
-            <Link to="/gallery">Gallery</Link>
-          </li>
+          
           <li>
             <Link to="/about-us">About Us</Link>
           </li>
